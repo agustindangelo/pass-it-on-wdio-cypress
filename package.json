@@ -25,5 +25,8 @@
         "@wdio/spec-reporter": "^7.19.7",
         "chromedriver": "^101.0.0",
         "wdio-chromedriver-service": "^7.3.2"
+    },
+    "dependencies": {
+        "cypress": "^9.7.0"
     }
 }
