@@ -1,16 +1,21 @@
+///<reference types="cypress" />
 const Page = require('./page');
 
 class NewWindowPage extends Page {
   get newWindowLink() {
-    return $('.example a');
+    return cy.get('.example a');
   }
 
   async clickNewWindowLink() {
-    await this.newWindowLink.click();
+    this.newWindowLink.invoke('removeAttr', 'target').click();
   }
 
   open() {
     return super.open('windows');
+  }
+
+  goBack(){
+    cy.go('back')
   }
 }
 
