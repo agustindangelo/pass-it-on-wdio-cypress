@@ -10,7 +10,7 @@ class NewWindowPage extends Page {
   }
 
   open() {
-    return super.open('windows');
+    return super.open('/windows');
   }
 }
 

@@ -13,7 +13,7 @@ describe('Wait tests', () => {
   it('should wait for the text to render', async () => {
     await DynamicallyRenderedPage.open();
     await DynamicallyRenderedPage.clickStartBtn();
-
+    
     await expect(DynamicallyRenderedPage.finishText).toBeExisting();
     await expect(DynamicallyRenderedPage.finishText).toHaveTextContaining('Hello World!');
   });

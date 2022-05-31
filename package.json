@@ -5,7 +5,10 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run wdio.conf.js",
+        "cy:ui": "npx cypress open",
+        "cy:run": "npx cypress run",
+        "cy:dashboard": "npx cypress run --record --key d7aa6b38-13c0-4a9f-8996-83e7df0960b3"
     },
     "repository": {
         "type": "git",
