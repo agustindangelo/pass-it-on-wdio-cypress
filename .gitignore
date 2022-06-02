@@ -1,6 +1,3 @@
-# Allure webdriverIO reports
-allure-results/
-
 # Logs
 logs
 *.log
@@ -109,3 +106,7 @@ dist
 #cypress failed tests reports
 cypress/videos
 cypress/screenshots
+
+# WebdriverIO reports
+wdio/video-results/
+wdio/allure-results/
